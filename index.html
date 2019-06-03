@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biomes</title>
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=5.0,minimum-scale=1.0, minimal-ui">
+	<meta name="HandheldFriendly" content="true"/>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<!-- <main> -->
+	<div id='main' role="main"></div>
+	<div id='whole_container' role="application">
+		<div role='navigation' style='display:none'>No Navigation</div>
+		<div id='begin_page'>
+			<div id='begin_dummy' role="none"></div>
+			<a href="#pageTitle" style="position: absolute;top: -200px;">Skip to page title</a>
+			<h1 class="beginPageTitle" role="heading" aria-level="1" id="pageTitle"></h1>
+			<img class="beginPageImage" role="img" id="pageImage" src="assets/images/beginPageSlide_1.png" alt="Climate factors that shape terrestrial biomes">
+			<button type="button" id='begin_btn' aria-label="Begin">Begin</button>
+		</div>
+			<div id='begin_reverse_dummy' role="none"></div>
+		<div class="preload">
+            <div class="loader"></div>
+        </div> 
+	</div>
+<!-- </main>	 -->
+	<script>
+		$.holdReady(true);
+		var preloadComplete=false;
+		$.getScript("./js/lib/preloadjs-0.6.2.min.js", function() {
+			$.holdReady(false);
+			manifest = [
+				"assets/images/common/loading.gif",
+				"assets/images/beginPageSlide_1.png",
+				"assets/images/secondScrPage.png",
+				"assets/images/close_btn.png"
+			];
+			preload = new createjs.LoadQueue(true);
+			preload.addEventListener("progress", function() {
+				//console.log('Updating preloading progress...'+Math.round(preload.progress*100)+"%");
+				$('.preload').remove();
+			});
+			preload.addEventListener("complete", function(){
+				setTimeout(function(){
+					$('.preload').fadeOut();
+				},100)
+			});
+			preload.setMaxConnections(5);
+			preload.loadManifest(manifest);
+		});
+	</script>
+	<script type="text/javascript" src="js/lib/preloadjs-0.6.2.min.js"></script>
+	<script type="text/javascript" src="js/lib/fitToScreen.js"></script>
+</body>
+</html>
