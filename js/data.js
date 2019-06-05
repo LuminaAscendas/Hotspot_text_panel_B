@@ -7,19 +7,19 @@ var data = {
 		"Directions:  Click on each question mark to progress through the graphic. You may close the caption by clicking on the \"X\" or by clicking on the next question mark.",
 	"popUp_Tiles":[
 		{
-			"popUp_Heading":"Climate factors that shape terrestrial biomes",
+			"popUp_Heading":"Climate Factors That Shape Terrestrial Biomes",
             "popUp_Content":"Terrestrial biomes can be classified by their major climate characteristics and their locations, as described by latitude. Temperature and precipitation are the primary climate factors that determine the distribution of terrestrial biomes."
         },		
 		{
-			"popUp_Heading":"Costa Rica tropical rain forest",
+			"popUp_Heading":"Costa Rica Tropical Rain Forest",
             "popUp_Content":"In temperate and tropical zones, precipitation is more important than temperature in shaping biomes, as biomes with a wide range in annual precipitation are found at the same latitudes in these regions. The tropical rain forest is the wettest of all terrestrial biomes and one of the warmest; the temperate rain forest is cooler and has less precipitation but is still the wettest biome in temperate zones."
         },		
 		{
-			"popUp_Heading":"Alaska tundra",
+			"popUp_Heading":"Alaska Tundra",
             "popUp_Content":"At higher latitudes, temperature is more important than precipitation in shaping biomes, as mean annual temperatures decline poleward. The tundra biome is cold, with long, severe winters and brief summers."
         },
 		{
-			"popUp_Heading":"California desert",
+			"popUp_Heading":"California Desert",
             "popUp_Content":"Biomes differ in the relative amounts of precipitation they receive and in the seasonal distribution of precipitation. Desert is the driest biome in both temperate and tropical zones—tropical desert is the driest of all terrestrial biomes and one of the warmest. Dry throughout the year, desert exhibits the least seasonal change in precipitation."
         },
 	],

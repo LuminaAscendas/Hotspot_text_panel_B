@@ -128,14 +128,18 @@ button{
     position: relative;
     width: 100%;
 	font-size: 14px;
-	font-family: 'SourceSansPro-Bold';
+	font-family: "SourceSansPro-Regular";
+	font-weight:normal;
     margin-top: 50px;
 }
 .sliderHeadText{
+	font-family: "SourceSansPro-Bold";
 	color: #007098;
 }
 .slideSubTxt{
 	color: black;
+	font-family: "SourceSansPro-Regular";
+	font-weight:normal;
 }
 #responsive_container{
     position: relative;
