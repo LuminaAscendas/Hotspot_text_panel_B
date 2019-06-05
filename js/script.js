@@ -39,6 +39,7 @@ $(document).ready(function(){
 		$('#begin_page').remove();
 		begin_entered=true;
 		$('#whole_container').css("width","666px");
+		$('#whole_container').hide();
 		var setTime = setTimeout(function(){
 			$('<div id="secondScrn_dummy1" role="none"></div>').appendTo('#whole_container');
 			$('<a href="#direction_text" id="anchorId" style="position: absolute;top: -200px;">Skip to Direction</a>').appendTo('#whole_container');
@@ -77,6 +78,7 @@ $(document).ready(function(){
 			});
 			$('.popUpBtnCls').off('click').on('click',popUpBtn_ClickFun);
 			$('#reset_btn').off('click').on('click',pageReload);
+			$('#whole_container').fadeIn(500);
 			setTabindex('notClicked');
 			resizeApp();
 		},100);
